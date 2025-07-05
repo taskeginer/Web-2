@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasa Joki Game Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .price-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .price-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    .price-tag {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .note-box {
+      background: #fff9e6;
+      border-left: 4px solid #f1c40f;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+    .note-box::before {
+      content: "ℹ️";
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white !important;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background: #128C7E;
+      box-shadow: 0 8px 20px rgba(18,140,126,0.4);
+      transform: translateY(-5px);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0; top: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      text-align: center;
+      color: var(--primary);
+    }
+    .modal-content label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    .modal-content input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .modal-content button[type="submit"] {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .modal-content button[type="submit"]:hover {
+      background-color: #128C7E;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: #e74c3c;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header" data-aos="fade-down">
+  <h1>🎮 JASA JOKI GAME PROFESIONAL</h1>
+  <p>Pendakian Rank Cepat dan Aman oleh Pro Player</p>
+</header>
+
+<section class="header" data-aos="fade-up">
+  <h3>🕒 Jam Operasional:</h3>
+  <ul>
+    <li>Setiap Hari (08:00 – 02:00 WIB)</li>
+    <li>Order diproses dalam 5–30 menit</li>
+  </ul>
+</section>
+
+<div class="price-card" data-aos="fade-up">
+  <h2>🔥 Mobile Legends</h2>
+  <ul>
+    <li><strong>Warrior – Epic</strong><div class="price-tag">Rp50.000</div></li>
+    <li><strong>Epic – Mythic</strong><div class="price-tag">Rp90.000</div></li>
+    <li><strong>Mythic – Glorious</strong><div class="price-tag">Rp150.000</div></li>
+  </ul>
+</div>
+
+<div class="price-card" data-aos="fade-up" data-aos-delay="200">
+  <h2>🔥 Free Fire</h2>
+  <ul>
+    <li><strong>Bronze – Gold</strong><div class="price-tag">Rp40.000</div></li>
+    <li><strong>Gold – Diamond</strong><div class="price-tag">Rp75.000</div></li>
+    <li><strong>Diamond – Heroic</strong><div class="price-tag">Rp120.000</div></li>
+  </ul>
+</div>
+
+<div class="price-card" data-aos="fade-up" data-aos-delay="100">
+  <h2>🔫 PUBG Mobile</h2>
+  <ul>
+    <li><strong>Bronze – Platinum</strong><div class="price-tag">Rp70.000</div></li>
+    <li><strong>Platinum – Crown</strong><div class="price-tag">Rp100.000</div></li>
+    <li><strong>Crown – Conqueror</strong><div class="price-tag">Rp200.000</div></li>
+  </ul>
+</div>
+
+<div class="note-box" data-aos="zoom-in-up">
+  <p>
+    • Layanan 100% aman & terpercaya<br>
+    • Bisa request hero/senjata tertentu<br>
+    • Proses cepat tergantung antrian<br>
+    • Diskon 20% untuk pelanggan baru
+  </p>
+</div>
+
+<div class="note-box" data-aos="zoom-in-up" data-aos-delay="200">
+  <strong>Catatan:</strong>
+  <p>
+    Kami menjaga kerahasiaan akun pelanggan sepenuhnya. Harap ganti password setelah jasa selesai digunakan.
+  </p>
+</div>
+
+<center data-aos="fade-up">
+  <a class="whatsapp-btn" href="https://wa.me/6285768163579">📞 Hubungi Admin via WhatsApp</a>
+</center>
+
+<div class="modal" id="modalFormulir">
+  <div class="modal-content">
+    <button class="close-btn" onclick="tutupFormulir()">Tutup</button>
+    <h2>Formulir Jasa Joki</h2>
+    <form onsubmit="kirimKeWhatsApp(); return false;">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required>
+
+      <label for="game">Nama Game:</label>
+      <input type="text" id="game" required>
+
+      <label for="username">Username ID:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password Akun:</label>
+      <input type="text" id="password" required>
+
+      <label for="target">Target Rank/Tier:</label>
+      <input type="text" id="target" required>
+
+      <label for="whatsapp">No WhatsApp:</label>
+      <input type="tel" id="whatsapp" pattern="[0-9]{10,15}" required>
+
+      <button type="submit">Kirim ke WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+
+  function bukaFormulir() {
+    document.getElementById('modalFormulir').style.display = 'flex';
+  }
+
+  function tutupFormulir() {
+    document.getElementById('modalFormulir').style.display = 'none';
+  }
+
+  function kirimKeWhatsApp() {
+    const nama = document.getElementById("nama").value;
+    const game = document.getElementById("game").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const target = document.getElementById("target").value;
+    const whatsapp = document.getElementById("whatsapp").value;
+
+    const nomor = "6285768163579";
+    const pesan = `Halo Admin, saya ingin menggunakan jasa joki game:%0A%0A` +
+                  `Nama: ${nama}%0A` +
+                  `Game: ${game}%0A` +
+                  `Username ID: ${username}%0A` +
+                  `Password: ${password}%0A` +
+                  `Target Rank: ${target}%0A` +
+                  `WA: ${whatsapp}`;
+
+    const url = `https://wa.me/${nomor}?text=${pesan}`;
+    window.open(url, "_blank");
+    tutupFormulir();
+  }
+</script>
+</body>
+</html>
